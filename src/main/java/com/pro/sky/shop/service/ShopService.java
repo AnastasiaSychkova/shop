@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 @Service
 
-
+@SessionScope
 
 public class ShopService {
 
