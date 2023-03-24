@@ -1,5 +1,9 @@
 package com.pro.sky.shop;
 
+import org.springframework.web.context.annotation.SessionScope;
+
+@SessionScope
+
 public class Shop {
     private int id;
     public Shop(int id){

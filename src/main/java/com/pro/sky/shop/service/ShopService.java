@@ -10,8 +10,6 @@ import java.util.stream.Collectors;
 
 @Service
 
-@SessionScope
-
 public class ShopService {
 
     private static List<Shop> shops = new ArrayList<>();
