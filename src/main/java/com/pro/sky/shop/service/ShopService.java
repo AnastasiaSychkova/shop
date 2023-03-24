@@ -10,22 +10,20 @@ import java.util.stream.Collectors;
 
 @Service
 
-@SessionScope
-
 public class ShopService {
 
-    private static List<Shop> shop = new ArrayList<>();
+    private static List<Shop> shops = new ArrayList<>();
 
     public List<Shop> add(List<Integer> ids) {
         List<Shop> newShop = ids.stream()
                 .map(id -> new Shop(id))
                 .collect(Collectors.toList());
 
-        shop.addAll(newShop);
+        shops.addAll(newShop);
         return newShop;
     }
 
     public List<Shop> get() {
-        return shop;
+        return shops;
     }
 }
